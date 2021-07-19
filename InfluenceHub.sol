@@ -515,7 +515,7 @@ contract INFLHUBDividendTracker is DividendPayingToken, Ownable {
  
     constructor() public DividendPayingToken("INFLHUB_Dividend_Tracker", "INFLHUB_Dividend_Tracker") {
     	claimWait = 3600;
-        minimumTokenBalanceForDividends = 100000000000 * (10**15); //must hold 100000000000+ tokens
+        minimumTokenBalanceForDividends = 100000000000 * (10**9); //must hold 100000000000+ tokens
     }
  
     function _transfer(address, address, uint256) internal override {
